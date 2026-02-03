@@ -9,6 +9,17 @@ export default function ProjectsPage() {
       <div className="pt-14">
         <SectionHeader
           eyebrow="Projects"
+          title="Coming soon!"
+        />
+      </div>
+    </Container>
+  )
+
+  return (
+    <Container>
+      <div className="pt-14">
+        <SectionHeader
+          eyebrow="Projects"
           title="What I’ve built"
           subtitle="Short, scannable project pages with problem → approach → results."
         />

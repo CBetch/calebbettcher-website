@@ -3,11 +3,24 @@ import Button from "@/components/Button";
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import ProjectCard from "@/components/ProjectCard";
+import ResumePage from "./resume/page";
 import { projects } from "@/content/projects";
 import { site } from "@/lib/site";
 
 export default function Home() {
   const featured = [...projects].sort((a, b) => Number(!!b.featured) - Number(!!a.featured)).slice(0, 3);
+  return (
+    // Temp: show resume page directly instead of AI generated content (since it's live :P)
+    <Container>
+      <div className="mt-8 flex flex-wrap gap-3">
+        <Button href="/projects">View projects</Button>
+        <Button href="/resume" variant="ghost">Resume</Button>
+        <Button href="/contact" variant="ghost">Contact</Button>
+      </div>
+      <ResumePage/>
+    </Container>
+  )
+
 
   return (
     <Container>

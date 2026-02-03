@@ -8,24 +8,22 @@ export default function AboutPage() {
       <div className="pt-14">
         <SectionHeader
           eyebrow="About"
-          title="Short, specific, human"
-          subtitle="This is where you sound like a real person, not a LinkedIn template."
+          title="About Me"
+          subtitle="This is where I'll write a little bit about me! Right now, there's a lot of placeholder text so this website doesn't look totally AI generated."
         />
 
         <div className="grid md:grid-cols-2 gap-5">
           <Card className="p-6">
             <div className="text-sm font-semibold text-fg">What I do</div>
             <p className="mt-2 text-sm text-muted">
-              I build software systems and apply ML when it’s the right tool. I care about
-              clear metrics, clean architecture, and shipping.
+              I'm a 20 year old senior in my CS undergraduate degree, athlete, incoming grad student, and aspiring AI/ML engineer looking to break into the financial industry!
             </p>
           </Card>
 
           <Card className="p-6">
             <div className="text-sm font-semibold text-fg">What I like</div>
             <p className="mt-2 text-sm text-muted">
-              Technical depth, sharp design, fast feedback loops, and projects with a point.
-              Outside of work: climbing and staying active.
+              Skiing, Triathlons, Coding (sometimes), AI, Stocks, and Coffee
             </p>
           </Card>
         </div>

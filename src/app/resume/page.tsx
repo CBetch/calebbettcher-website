@@ -9,8 +9,7 @@ export default function ResumePage() {
       <div className="pt-14">
         <SectionHeader
           eyebrow="Resume"
-          title="Resume PDF"
-          subtitle="Embedded for viewing, one-click download."
+          title="My Resume"
         />
 
         <div className="flex gap-3 mb-5">
