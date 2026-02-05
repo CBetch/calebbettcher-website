@@ -40,3 +40,6 @@ yarn-error.log*
 # editor
 .vscode/*
 !.vscode/extensions.json
+
+# progress screenshots
+/progress

@@ -12,7 +12,7 @@ export default function AboutPage() {
           subtitle="This is where I'll write a little bit about me! Right now, there's a lot of placeholder text so this website doesn't look totally AI generated."
         />
 
-        <div className="grid md:grid-cols-2 gap-5">
+        {/* <div className="grid md:grid-cols-2 gap-5">
           <Card className="p-6">
             <div className="text-sm font-semibold text-fg">What I do</div>
             <p className="mt-2 text-sm text-muted">
@@ -26,7 +26,7 @@ export default function AboutPage() {
               Skiing, Triathlons, Coding (sometimes), AI, Stocks, and Coffee
             </p>
           </Card>
-        </div>
+        </div> */}
       </div>
     </Container>
   );

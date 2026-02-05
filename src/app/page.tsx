@@ -22,7 +22,7 @@ export default function Home() {
           {/* Left column */}
           <div className="min-w-0">
             <div className="mt-10 md:mt-[120px]">
-              <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-fg">
+              <h1 className="text-5xl md:text-[3.25rem] font-semibold leading-tight text-fg">
                 Caleb Bettcher
               </h1>
               <div className="mt-10 flex flex-wrap gap-3 justify-center">
@@ -39,9 +39,8 @@ export default function Home() {
                 <Card className="p-6">
                   <div className="text-xs text-muted uppercase tracking-wide mb-3">About Me</div>
                   <div className="text-sm text-fg/80 leading-relaxed space-y-2">
-                    <p><span className="font-semibold text-fg">Focus:</span> ML + Systems</p>
-                    <p><span className="font-semibold text-fg">Work style:</span> Ship → measure → iterate</p>
-                    <p><span className="font-semibold text-fg">Outside work:</span> Competitive climbing</p>
+                    <p><span className="font-semibold text-fg"></span>ML Systems | High-Performance Software</p>
+                    <p><span className="font-semibold text-fg"></span>Building intelligent systems in high-stakes environments where correctness, speed, and scale matter.</p>
                   </div>
                 </Card>
               </div>
@@ -54,25 +53,25 @@ export default function Home() {
               <ExperienceCard
                 href="/resume"
                 title="Internship"
-                desc="More whatever"
+                desc="Page coming soon..."
                 img="/icons/belvedere.png"
               />
               <ExperienceCard
                 href="/resume"
                 title="School"
-                desc="Whatever"
-                img="/icons/cornell.png"
+                desc="Page coming soon..."
+                img="/icons/cu.png"
               />
               <ExperienceCard
                 href="/resume"
                 title="Research"
-                desc="Machine learning, idk"
+                desc="Page coming soon..."
                 img="/icons/cu.png"
               />
               <ExperienceCard
                 href="/resume"
                 title="Fellowship"
-                desc="idk"
+                desc="Page coming soon..."
                 img="/icons/handshake.png"
               />
             </div>

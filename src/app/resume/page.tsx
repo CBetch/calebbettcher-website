@@ -8,7 +8,7 @@ export default function ResumePage() {
     <Container>
       <ResumeBackground />
       <div className="pt-8">
-        <div className="flex items-center gap-10 mb-6">
+        <div className="flex items-center gap-6 mb-6">
           <h2 className="text-2xl md:text-3xl font-semibold text-fg">
             Resume
           </h2>
