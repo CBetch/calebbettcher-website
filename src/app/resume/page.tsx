@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
-import ResumeBackground from "@/components/ResumeBackground";
+import ResumeBackground from "@/components/backgrounds/ResumeBackground";
 
 export default function ResumePage() {
   return (
