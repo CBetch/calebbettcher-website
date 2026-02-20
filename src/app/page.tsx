@@ -7,6 +7,7 @@ import ProjectCard from "@/components/content/ProjectCard";
 import ExperienceCard from "@/components/content/ExperienceCard";
 import { projects } from "@/content/projects";
 import HomepageBackground from "@/components/backgrounds/HomepageBackground";
+import AnimatedNeuralNetBackground from "@/components/backgrounds/AnimatedNeuralNetBackground";
 
 export default function Home() {
   const featured = [...projects]
@@ -16,7 +17,8 @@ export default function Home() {
   return (
     <Container>
       <div className="pt-7 md:pt-6">
-        <HomepageBackground />
+        {/* <HomepageBackground /> */}
+        <AnimatedNeuralNetBackground center={{ x: 0.25, y: 0.55 }} containRadius={500} node_count={50} />
 
         {/* Hero */}
         <div className="grid md:grid-cols-[2fr_3fr] gap-10 items-start">

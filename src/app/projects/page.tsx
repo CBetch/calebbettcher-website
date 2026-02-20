@@ -1,12 +1,13 @@
 import Container from "@/components/Container";
 import SectionHeader from "@/components/SectionHeader";
 import ProjectCard from "@/components/content/ProjectCard";
+import AnimatedNeuralNetBackground from "@/components/backgrounds/AnimatedNeuralNetBackground";
 import { projects } from "@/content/projects";
 
 export default function ProjectsPage() {
   return (
     <Container>
-      {/* <HomepageBackground /> */}
+      <AnimatedNeuralNetBackground center={{ x: 0.55, y: 0.65 }} containRadius={450} />
       <div className="pt-8">
         <SectionHeader
           eyebrow=""
