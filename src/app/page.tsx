@@ -44,7 +44,7 @@ export default function Home() {
                     <div className="text-xs text-muted uppercase tracking-wide mb-3">About Me</div>
                     <div className="text-sm text-fg/80 leading-relaxed space-y-2">
                       <p><span className="font-semibold text-fg"></span>ML Systems | High-Performance Software</p>
-                      <p><span className="font-semibold text-fg"></span>Building intelligent systems in high-stakes environments where correctness, speed, and scale matter.</p>
+                      <p><span className="font-semibold text-fg"></span>Computer science researcher and software engineer focused on machine learning systems, scientific data analysis, and quantitative finance applications.</p>
                     </div>
                   </Card>
                 </Link>
