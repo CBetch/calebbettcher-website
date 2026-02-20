@@ -69,7 +69,7 @@ export default function Home() {
               />
               <ExperienceCard
                 href="/projects/LAIRresearch"
-                title="Undergraduate Research"
+                title="Machine Learning Research"
                 desc="Classification of High-Energy Particle Precipitation Events Using Computer Vision"
                 img="/icons/cu.png"
               />
