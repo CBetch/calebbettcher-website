@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import Container from "./Container";
+import Container from "../Container";
 import { site } from "@/lib/site";
 
 const items = [
-  { href: "/projects", label: "Projects" },
   { href: "/resume", label: "Resume" },
+  { href: "/experience", label: "Experience" },
+  { href: "/projects", label: "Projects" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -40,8 +41,7 @@ export default function Nav() {
               <Link
                 key={i.href}
                 href={i.href}
-                className="text-base text-muted hover:text-fg transition"
-              >
+                className="text-base text-muted hover:text-fg hover:underline underline-offset-4 hover:-translate-y-0.5 transition"              >
                 {i.label}
               </Link>
             ))}

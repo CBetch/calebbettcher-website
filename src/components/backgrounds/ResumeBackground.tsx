@@ -68,7 +68,7 @@ export default function ResumeBackground() {
 
       {/* Smile Easter Egg */}
       <motion.img
-        src="/icons/smile.png"
+        src="/images/smile.png"
         style={{ y: yBelvedere }}
         className="
           absolute

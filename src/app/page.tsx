@@ -1,11 +1,12 @@
+import Link from "next/link";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
-import ProjectCard from "@/components/ProjectCard";
-import ExperienceCard from "@/components/ExperienceCard";
+import ProjectCard from "@/components/content/ProjectCard";
+import ExperienceCard from "@/components/content/ExperienceCard";
 import { projects } from "@/content/projects";
-import HomepageBackground from "@/components/HomepageBackground";
+import HomepageBackground from "@/components/backgrounds/HomepageBackground";
 
 export default function Home() {
   const featured = [...projects]
@@ -14,18 +15,18 @@ export default function Home() {
 
   return (
     <Container>
-      <div className="pt-7 md:pt-10">
+      <div className="pt-7 md:pt-6">
         <HomepageBackground />
 
         {/* Hero */}
         <div className="grid md:grid-cols-[2fr_3fr] gap-10 items-start">
           {/* Left column */}
           <div className="min-w-0">
-            <div className="mt-10 md:mt-[120px]">
+            <div className="mt-10 md:mt-[70px]">
               <h1 className="text-5xl md:text-[3.25rem] font-semibold leading-tight text-fg">
                 Caleb Bettcher
               </h1>
-              <div className="mt-10 flex flex-wrap gap-3 justify-center">
+              <div className="mt-8 flex flex-wrap gap-3">
                 <Button href="/projects">View projects</Button>
                 <Button href="/resume" variant="ghost">
                   Resume
@@ -36,13 +37,15 @@ export default function Home() {
               </div>
 
               <div className="mt-10">
-                <Card className="p-6">
-                  <div className="text-xs text-muted uppercase tracking-wide mb-3">About Me</div>
-                  <div className="text-sm text-fg/80 leading-relaxed space-y-2">
-                    <p><span className="font-semibold text-fg"></span>ML Systems | High-Performance Software</p>
-                    <p><span className="font-semibold text-fg"></span>Building intelligent systems in high-stakes environments where correctness, speed, and scale matter.</p>
-                  </div>
-                </Card>
+                <Link href="/about" className="block group">
+                  <Card className="p-6 group-hover:border-white/20 group-hover:bg-white/8 transition">
+                    <div className="text-xs text-muted uppercase tracking-wide mb-3">About Me</div>
+                    <div className="text-sm text-fg/80 leading-relaxed space-y-2">
+                      <p><span className="font-semibold text-fg"></span>ML Systems | High-Performance Software</p>
+                      <p><span className="font-semibold text-fg"></span>Building intelligent systems in high-stakes environments where correctness, speed, and scale matter.</p>
+                    </div>
+                  </Card>
+                </Link>
               </div>
             </div>
           </div>
@@ -51,27 +54,27 @@ export default function Home() {
           <div className="min-w-0 md:-mr-10">
             <div className="mt-6 grid gap-6 w-full">
               <ExperienceCard
-                href="/resume"
-                title="Internship"
-                desc="Page coming soon..."
+                href="https://www.belvederetrading.com/about"
+                title="Belvedere Trading"
+                desc="Quantitative Trading Software Development Intern"
                 img="/icons/belvedere.png"
               />
               <ExperienceCard
-                href="/resume"
-                title="School"
-                desc="Page coming soon..."
+                href="/education"
+                title="Education - University of Colorado Boulder"
+                desc="M.S. Computer Science"
+                img="/icons/cu.png"
+              />
+              <ExperienceCard
+                href="/projects/LAIRresearch"
+                title="Undergraduate Research"
+                desc="Classification of High-Energy Particle Precipitation Events Using Computer Vision"
                 img="/icons/cu.png"
               />
               <ExperienceCard
                 href="/resume"
-                title="Research"
-                desc="Page coming soon..."
-                img="/icons/cu.png"
-              />
-              <ExperienceCard
-                href="/resume"
-                title="Fellowship"
-                desc="Page coming soon..."
+                title="Handshake AI"
+                desc="Fellowship - Page coming soon..."
                 img="/icons/handshake.png"
               />
             </div>
@@ -92,7 +95,7 @@ export default function Home() {
           </div>
 
           <div className="mt-8">
-            <Button href="/projects" variant="ghost">
+            <Button href="/projects">
               See all projects
             </Button>
           </div>

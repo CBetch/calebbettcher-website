@@ -11,7 +11,7 @@ export default function HomepageBackground() {
       
       {/* Logo */}
       <motion.img
-        src="/CBlogo.png"
+        src="/images/CBlogo.png"
         style={{ 
           y: ySlow,
           left: "50%",

@@ -5,7 +5,7 @@ import SectionHeader from "@/components/SectionHeader";
 export default function AboutPage() {
   return (
     <Container>
-      <div className="pt-14">
+      <div className="pt-8">
         <SectionHeader
           eyebrow="About"
           title="About Me"
