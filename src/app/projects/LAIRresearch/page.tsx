@@ -9,7 +9,7 @@ export default function LAIRresearchPage() {
         {/* <HomepageBackground /> */}
         <ProjectShowcase
           eyebrow="Classification of High-Energy Particle Precipitation Events Using Computer Vision"
-          title="Undergraduate Research"
+          title="Machine Learning Research"
           description={
             <>
               During my research with the LAIR Lab at the University of Colorado Boulder, I developed a pipeline to analyze satellite data of energetic particle precipitation. ELFIN satellite data was converted into standardized time–energy plots, where different precipitation mechanisms produce distinctive visual signatures (e.g., “blobs” or "wave-curl" structures).

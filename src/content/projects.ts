@@ -10,7 +10,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "LAIRresearch",
-    title: "Undergraduate Research",
+    title: "Machine Learning Research",
     blurb: "Classification of Particle Precipitation Events",
     tags: ["Python", "Machine Learning", "Computer Vision", "Distributed Training"],
     image: "/icons/cu.png",
