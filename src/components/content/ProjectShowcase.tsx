@@ -160,10 +160,6 @@ export default function ProjectShowcase({
 
   return (
     <section className="relative">
-      <div className="pointer-events-none absolute inset-0 flex justify-end">
-        <div className="w-1/2 h-full bg-gradient-to-l from-a/5 via-b/5 to-transparent" />
-      </div>
-
       {hasMedia ? (
         // Rendering 1 & 2: Image or PDF — two-column layout
         <div className="w-full grid gap-12 md:gap-20 items-center py-10 md:grid-cols-2">

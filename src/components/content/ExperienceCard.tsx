@@ -18,12 +18,10 @@ export default function ExperienceCard({ href, title, desc, img }: ExperienceCar
         h-[110px]
         rounded-2xl
         border border-white/10
-        bg-white/5
         px-6
         hover:bg-white/10 hover:border-white/20
         transition
         flex items-center
-        bg-transparent
       "
     >
       <div className="flex items-center gap-4 w-full">

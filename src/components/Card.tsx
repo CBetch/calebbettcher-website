@@ -10,7 +10,7 @@ export default function Card({
   return (
     <div
       className={[
-        "rounded-2xl bg-bg1/35 backdrop-blur-xl border border-white/10",
+        "rounded-2xl bg-bg1/35 border border-white/10",
         "shadow-[0_20px_80px_rgba(0,0,0,.45)]",
         className,
       ].join(" ")}
