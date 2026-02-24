@@ -17,7 +17,7 @@ export default function Nav() {
       <Container>
         <div className="flex h-20 items-center justify-between">
           {/* Logo / Name */}
-          <Link href="/" className="flex items-center gap-4">
+          <Link href="/" className="flex items-center gap-4 bg-transparent">
             <Image
               src="/favicon.ico"
               alt="Caleb Bettcher logo"
@@ -41,7 +41,7 @@ export default function Nav() {
               <Link
                 key={i.href}
                 href={i.href}
-                className="text-base text-muted hover:text-fg hover:underline underline-offset-4 hover:-translate-y-0.5 transition"              >
+                className="text-base text-muted hover:text-fg hover:underline underline-offset-4 hover:-translate-y-0.5 transition bg-transparent"              >
                 {i.label}
               </Link>
             ))}
@@ -54,7 +54,7 @@ export default function Nav() {
               href={site.links.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="opacity-70 hover:opacity-100 hover:scale-110 transition"
+              className="opacity-70 hover:opacity-100 hover:scale-110 transition bg-transparent"
             >
               <Image
                 src="/icons/linkedin.png"
@@ -69,7 +69,7 @@ export default function Nav() {
               href={site.links.github}
               target="_blank"
               rel="noreferrer"
-              className="opacity-70 hover:opacity-100 hover:scale-110 transition invert"
+              className="opacity-70 hover:opacity-100 hover:scale-110 transition invert bg-transparent"
             >
               <Image
                 src="/icons/github.png"

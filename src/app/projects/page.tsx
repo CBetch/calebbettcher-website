@@ -2,7 +2,7 @@ import Container from "@/components/Container";
 import SectionHeader from "@/components/SectionHeader";
 import ProjectCard from "@/components/content/ProjectCard";
 import AnimatedNeuralNetBackground from "@/components/backgrounds/AnimatedNeuralNetBackground";
-import { projects } from "@/content/projects";
+import { projectCards } from "@/content/projects/projectCards";
 
 export default function ProjectsPage() {
   return (
@@ -14,8 +14,8 @@ export default function ProjectsPage() {
           title="Projects"
         />
         <div className="grid md:grid-cols-3 gap-5">
-          {projects.map((p) => (
-            <ProjectCard key={p.slug} p={p} />
+          {projectCards.map((project) => (
+            <ProjectCard key={project.slug} project={project} />
           ))}
         </div>
       </div>

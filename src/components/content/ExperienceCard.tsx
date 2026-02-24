@@ -23,6 +23,7 @@ export default function ExperienceCard({ href, title, desc, img }: ExperienceCar
         hover:bg-white/10 hover:border-white/20
         transition
         flex items-center
+        bg-transparent
       "
     >
       <div className="flex items-center gap-4 w-full">

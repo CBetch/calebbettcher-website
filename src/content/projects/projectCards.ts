@@ -1,4 +1,4 @@
-export type Project = {
+export type ProjectCard = {
   slug: string;
   title: string;
   blurb: string;
@@ -7,7 +7,7 @@ export type Project = {
   featured?: boolean;
 };
 
-export const projects: Project[] = [
+export const projectCards: ProjectCard[] = [
   {
     slug: "LAIRresearch",
     title: "ML Research",
@@ -17,10 +17,11 @@ export const projects: Project[] = [
     featured: true
   },
   {
-    slug: "featured-project-2",
-    title: "Featured Project 2",
-    blurb: "Coming soon...",
-    tags: [],
+    slug: "CalebBettcherDotCom",
+    title: "Personal Website",
+    blurb: "This Website!",
+    tags: ["React", "Next.js", "TypeScript", "Vercel", "Web Development"],
+    image: "/images/CBlogo.png",
     featured: true
   },
   {
@@ -40,5 +41,5 @@ export const projects: Project[] = [
 ];
 
 export function getProject(slug: string) {
-  return projects.find((p) => p.slug === slug);
+  return projectCards.find((project) => project.slug === slug);
 }
