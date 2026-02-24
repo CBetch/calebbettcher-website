@@ -5,12 +5,12 @@ import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import ProjectCard from "@/components/content/ProjectCard";
 import ExperienceCard from "@/components/content/ExperienceCard";
-import { projects } from "@/content/projects";
+import { projectCards } from "@/content/projects/projectCards";
 import HomepageBackground from "@/components/backgrounds/HomepageBackground";
 import AnimatedNeuralNetBackground from "@/components/backgrounds/AnimatedNeuralNetBackground";
 
 export default function Home() {
-  const featured = [...projects]
+  const featured = [...projectCards]
     .sort((a, b) => Number(!!b.featured) - Number(!!a.featured))
     .slice(0, 3);
 
@@ -20,7 +20,6 @@ export default function Home() {
         {/* <HomepageBackground /> */}
         <AnimatedNeuralNetBackground center={{ x: 0.25, y: 0.55 }} containRadius={500} node_count={50} />
 
-        {/* Hero */}
         <div className="grid md:grid-cols-[2fr_3fr] gap-10 items-start">
           {/* Left column */}
           <div className="min-w-0">
@@ -83,7 +82,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Projects */}
+        {/* ProjectShowcase */}
         <div className="mt-4 md:mt-8">
           <SectionHeader
             eyebrow="Projects"
@@ -91,8 +90,8 @@ export default function Home() {
             subtitle="A select few of of my favorite projects that I've recently worked on!"
           />
           <div className="grid md:grid-cols-3 gap-5">
-            {featured.map((p) => (
-              <ProjectCard key={p.slug} p={p} />
+            {featured.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
             ))}
           </div>
 

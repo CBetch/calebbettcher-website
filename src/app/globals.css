@@ -1,15 +1,23 @@
 @import "tailwindcss";
 
+@theme {
+  --color-bg0: #0a0a0a;
+  --color-bg1: #111111;
+  --color-fg: #f0f0f0;
+  --color-muted: #aaaaaa;
+  --color-a: #ffffff;
+  --color-b: #cccccc;
+  --color-c: #999999;
+}
+
 :root {
-  --bg0: 10 12 20;
-  --bg1: 14 18 32;
-
-  --fg: 236 242 255;
-  --muted: 160 170 200;
-
-  --a: 80 220 255;
-  --b: 170 110 255;
-  --c: 255 190 90;
+  --bg0: 10 10 10;
+  --bg1: 17 17 17;
+  --fg: 240 240 240;
+  --muted: 170 170 170;
+  --a: 255 255 255;
+  --b: 204 204 204;
+  --c: 153 153 153;
 }
 
 html { color-scheme: dark; }

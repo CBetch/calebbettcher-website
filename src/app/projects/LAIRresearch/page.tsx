@@ -1,6 +1,5 @@
 import Container from "@/components/Container";
 import ProjectShowcase from "@/components/content/ProjectShowcase";
-import HomepageBackground from "@/components/backgrounds/HomepageBackground";
 
 export default function LAIRresearchPage() {
   return (
