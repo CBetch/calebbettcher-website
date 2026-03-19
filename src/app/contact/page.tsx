@@ -42,7 +42,7 @@ export default function ContactPage() {
       <div className="pt-8">
         <SectionHeader
           eyebrow=""
-          title="Contact Me"
+          title="Contact"
           subtitle="Let's talk, I'm always open to projects, collaborations, or other opportunities! Shoot me an email or connect with me on GitHub or LinkedIn."
         />
         <div className="pt-8 grid md:grid-cols-3 gap-5 -mt-6">
