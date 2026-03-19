@@ -12,11 +12,11 @@ export default function SectionHeader({
       <div className="text-xs uppercase tracking-[0.25em] text-muted">
         {eyebrow}
       </div>
-      <h2 className="mt-3 text-2xl md:text-3xl font-semibold text-fg">
+      <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-fg leading-tight">
         {title}
       </h2>
       {subtitle ? (
-        <p className="mt-2 text-sm md:text-base text-muted max-w-2xl">
+        <p className="mt-3 text-sm md:text-base text-muted">
           {subtitle}
         </p>
       ) : null}
