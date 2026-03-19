@@ -3,6 +3,7 @@ import SectionHeader from "@/components/SectionHeader";
 import ProjectShowcase from "@/components/content/ProjectShowcase";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
+import HomepageBackground from "@/components/backgrounds/HomepageBackground";
 
 const skills = {
   "Languages": ["Python", "JavaScript", "C++", "SQL"],
@@ -14,6 +15,7 @@ const skills = {
 export default function AboutPage() {
   return (
     <Container>
+      <HomepageBackground />
       <ProjectShowcase
         eyebrow=""
         title="About Me 👋"
