@@ -16,7 +16,7 @@ export default function SectionHeader({
         {title}
       </h2>
       {subtitle ? (
-        <p className="mt-2 text-sm md:text-base text-muted max-w-2xl">
+        <p className="mt-2 text-sm md:text-base text-muted">
           {subtitle}
         </p>
       ) : null}

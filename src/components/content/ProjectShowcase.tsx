@@ -86,7 +86,7 @@ function MediaPanel({
   }
 
   return (
-    <div className={`${cardClass} aspect-video`}>
+    <div className={`${cardClass} aspect-square`}>
       <Image src={image!} alt={imageAlt ?? ""} fill className="object-cover" />
       <div className="pointer-events-none absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.3)]" />
     </div>
