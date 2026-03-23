@@ -1,6 +1,12 @@
 import Container from "@/components/Container";
 import SectionHeader from "@/components/SectionHeader";
 
+import type { Metadata } from 'next'
+export const metadata: Metadata = {
+  title: 'Education - Caleb Bettcher',
+  description: 'My educational background and academic achievements.',
+}
+
 export default function EducationPage() {
   return (
     <Container>

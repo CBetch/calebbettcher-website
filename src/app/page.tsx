@@ -8,6 +8,12 @@ import ExperienceCard from "@/components/content/ExperienceCard";
 import { projectCards } from "@/content/projects/projectCards";
 import AnimatedNeuralNetBackground from "@/components/backgrounds/AnimatedNeuralNetBackground";
 
+import type { Metadata } from 'next'
+export const metadata: Metadata = {
+  title: 'Caleb Bettcher',
+  description: 'Computer science researcher and software engineer focused on machine learning systems, scientific data analysis, and quantitative finance applications.',
+}
+
 export default function Home() {
   const featured = [...projectCards]
     .sort((a, b) => Number(!!b.featured) - Number(!!a.featured))

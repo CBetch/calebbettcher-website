@@ -1,6 +1,12 @@
 import Container from "@/components/Container";
 import SectionHeader from "@/components/SectionHeader";
 
+import type { Metadata } from 'next'
+export const metadata: Metadata = {
+  title: 'Experience - Caleb Bettcher',
+  description: 'My professional experience and career achievements as a Quantitaive Finance Software Engineer.',
+}
+
 export default function ExperiencePage() {
   return (
     <Container>
