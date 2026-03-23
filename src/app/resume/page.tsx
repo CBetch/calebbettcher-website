@@ -2,6 +2,12 @@ import Image from "next/image";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 
+import type { Metadata } from 'next'
+export const metadata: Metadata = {
+  title: 'Resume - Caleb Bettcher',
+  description: 'My resume including experience as a Quantitative Finance Software Engineer with Belvedere Trading, Master\s degree in Computer Science from Cornell, and Artificial Intelligence research experience.',
+}
+
 export default function ResumePage() {
   return (
     <Container>
