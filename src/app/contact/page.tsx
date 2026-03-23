@@ -3,9 +3,14 @@ import Image from "next/image";
 import Container from "@/components/Container";
 import Card from "@/components/Card";
 import { site } from "@/lib/site";
-import ProjectShowcase from "@/components/content/ProjectShowcase";
 import HomepageBackground from "@/components/backgrounds/HomepageBackground";
 import SectionHeader from "@/components/SectionHeader";
+
+import type { Metadata } from 'next'
+export const metadata: Metadata = {
+  title: 'Contact - Caleb Bettcher',
+  description: 'calebbettcher.com - https://www.linkedin.com/in/caleb-bettcher-83496328a/ - Let\'s talk, I\'m always open to projects, collaborations, or other opportunities!',
+}
 
 const contacts = [
   {

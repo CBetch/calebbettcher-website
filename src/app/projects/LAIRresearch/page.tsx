@@ -1,6 +1,12 @@
 import Container from "@/components/Container";
 import ProjectShowcase from "@/components/content/ProjectShowcase";
 
+import type { Metadata } from 'next'
+export const metadata: Metadata = {
+  title: 'Research: Application of Artificial Intelligence to Astrophysics - Caleb Bettcher',
+  description: 'My machine learning research project focused on classifying high-energy particle precipitation events using the YOLO Computer Vision model.',
+}
+
 export default function LAIRresearchPage() {
   return (
     <Container>

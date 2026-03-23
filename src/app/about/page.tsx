@@ -5,6 +5,12 @@ import Card from "@/components/Card";
 import Button from "@/components/Button";
 import HomepageBackground from "@/components/backgrounds/HomepageBackground";
 
+import type { Metadata } from 'next'
+export const metadata: Metadata = {
+  title: 'About - Caleb Bettcher',
+  description: 'QuantFi Software Engineer, Researcher, AI Engineer, & Triathlete working towards a Computer Science Master’s degree from Cornell.',
+}
+
 const skills = {
   "Languages": ["Python", "JavaScript", "C++", "SQL"],
   "ML / Data": ["PyTorch", "NumPy", "Pandas", "SLURM"],

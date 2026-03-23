@@ -4,6 +4,12 @@ import ProjectCard from "@/components/content/ProjectCard";
 import AnimatedNeuralNetBackground from "@/components/backgrounds/AnimatedNeuralNetBackground";
 import { projectCards } from "@/content/projects/projectCards";
 
+import type { Metadata } from 'next'
+export const metadata: Metadata = {
+  title: 'Projects - Caleb Bettcher',
+  description: 'My projects and technical work including my Machine Learning research and Quantitative Finance software engineering projects.',
+}
+
 export default function ProjectsPage() {
   return (
     <Container>

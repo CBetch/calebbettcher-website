@@ -2,6 +2,12 @@ import Container from "@/components/Container";
 import ProjectShowcase from "@/components/content/ProjectShowcase";
 import AnimatedNeuralNetBackground from "@/components/backgrounds/AnimatedNeuralNetBackground";
 
+import type { Metadata } from 'next'
+export const metadata: Metadata = {
+  title: 'Project: calebbettcher.com - Caleb Bettcher',
+  description: 'My personal website and portfolio build with react, next.js, and tailwind css.',
+}
+
 export default function CalebBettcherDotComPage() {
   return (
     <Container>
