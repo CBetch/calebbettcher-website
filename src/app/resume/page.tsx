@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
+import ResumeDisplay from "@/components/content/ResumeDisplay";
 
-import type { Metadata } from 'next'
-export const metadata: Metadata = {
-  title: 'Resume - Caleb Bettcher',
-  description: 'My resume including experience as a Quantitative Finance Software Engineer with Belvedere Trading, Master\s degree in Computer Science from Cornell, and Artificial Intelligence research experience.',
+export const metadata = {
+  title: 'Resume — Caleb Bettcher',
+  description: 'View and download the resume of Caleb Bettcher, quantitative software engineer and CS researcher.',
 }
 
 export default function ResumePage() {
@@ -19,17 +18,7 @@ export default function ResumePage() {
             <Button href="/contact" variant="ghost">Contact</Button>
           </div>
         </div>
-
-        <div className="relative w-full max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-[0_20px_80px_rgba(0,0,0,.5)]">
-          <Image
-            src="/resume.jpg"
-            alt="Caleb Bettcher Resume"
-            width={1200}
-            height={1553}
-            className="w-full h-auto"
-            priority
-          />
-        </div>
+        <ResumeDisplay />
       </div>
     </Container>
   );

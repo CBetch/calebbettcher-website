@@ -6,7 +6,7 @@ export const site = {
 
   links: {
     github: "https://github.com/CBetch",
-    linkedin: "https://www.linkedin.com/in/caleb-bettcher-83496328a/",
+    linkedin: "https://www.linkedin.com/in/cbetch/",
     email: "mailto:calebbettcher@gmail.com",
   },
 } as const;
