@@ -75,7 +75,7 @@ export default function Home() {
               <ExperienceCard
                 href="/resume"
                 title="Handshake AI"
-                desc="Fellowship - Page coming soon..."
+                desc="AI Research Fellowship"
                 img="/icons/handshake.png"
               />
             </div>

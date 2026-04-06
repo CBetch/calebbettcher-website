@@ -9,7 +9,7 @@ import SectionHeader from "@/components/SectionHeader";
 import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Contact - Caleb Bettcher',
-  description: 'calebbettcher.com - https://www.linkedin.com/in/caleb-bettcher-83496328a/ - Let\'s talk, I\'m always open to projects, collaborations, or other opportunities!',
+  description: 'calebbettcher.com - https://www.linkedin.com/in/cbetch/ - Let\'s talk, I\'m always open to projects, collaborations, or other opportunities!',
 }
 
 const contacts = [
@@ -33,7 +33,7 @@ const contacts = [
   },
   {
     label: "LinkedIn",
-    value: "caleb-bettcher",
+    value: "cbetch",
     href: site.links.linkedin,
     icon: <Image src="/icons/linkedin.png" alt="LinkedIn" width={22} height={22} className="opacity-80" />,
     external: true,
