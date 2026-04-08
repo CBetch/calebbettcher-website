@@ -19,11 +19,20 @@ export default function CalebBettcherDotComPage() {
           title="CalebBettcher.com"
           description={
             <>
-              This personal portfolio was created to showcase projects not included on my resume, provide additional detail on prior experiences, and practice deploying code in a practical setting. I used modern frameworks including React, Next.js, and Tailwind CSS, and hosted the site on Vercel with domain management through Cloudflare.
+              This personal portfolio was created to showcase projects not included on my resume, provide 
+              additional detail on prior experiences, and practice deploying code in a practical setting. 
+              I used modern frameworks including React, Next.js, and Tailwind CSS, and hosted the site on 
+              Vercel with domain management through Cloudflare.
               <br/><br/>
-              This project also demonstrates my ability to combine prior experience with modern AI tools (mainly Claude and ChatGPT). For example, although I had not previously used Tailwind CSS at scale, I applied existing knowledge to iteratively guide the models toward the final implementation. As I developed new pages and expanded functionality, I directed coding practices and codebase organization - all visible in the public GitHub repository.
+              This project also demonstrates my ability to combine prior experience with modern AI tools 
+              (mainly Claude and ChatGPT). For example, although I had not previously used Tailwind CSS at 
+              scale, I applied existing knowledge to iteratively guide the models toward the final 
+              implementation. As I developed new pages and expanded functionality, I directed coding practices 
+              and codebase organization - all visible in the public GitHub repository.
               <br/><br/>
-              The custom animated background was originally intended to represent a neural network (aligned with my Artificial Intelligence and Machine Learning emphasis), but ended up resembling a "constellation generator". Feel free to play around with it on the TechFlex page!
+              The custom animated background was originally intended to represent a neural network (aligned 
+              with my Artificial Intelligence and Machine Learning emphasis), but ended up resembling a 
+              "constellation generator". Feel free to play around with it on the TechFlex page!
             </>
           }         
           tags={["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel", "Web Development"]}
