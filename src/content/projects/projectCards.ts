@@ -17,18 +17,19 @@ export const projectCards: ProjectCard[] = [
     featured: true
   },
   {
+    slug: "CUQuants",
+    title: "CU Quants - Quant Trader",
+    blurb: "My Work on CU Quant's Trading Team",
+    tags: ["Quantitative Finance", "Market Making", "Cryptocurrency", "Real-Time Systems"],
+    image: "/icons/CUQuants.jpg",
+    featured: true
+  },
+  {
     slug: "CalebBettcherDotCom",
     title: "Personal Website",
     blurb: "This Website!",
     tags: ["React", "Next.js", "TypeScript", "Vercel", "Web Development"],
     image: "/images/CBlogo.png",
-    featured: true
-  },
-  {
-    slug: "featured-project-3",
-    title: "Featured Project 3",
-    blurb: "Coming soon...",
-    tags: [],
     featured: true
   },
   {
