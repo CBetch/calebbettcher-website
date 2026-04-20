@@ -62,9 +62,9 @@ export default function Home() {
               />
               <ExperienceCard
                 href="/education"
-                title="Education - University of Colorado Boulder"
-                desc="M.S. Computer Science"
-                img="/icons/cu.png"
+                title="Cornell University"
+                desc="Master of Computer Science"
+                img="/icons/cornell.png"
               />
               <ExperienceCard
                 href="/projects/LAIRresearch"
