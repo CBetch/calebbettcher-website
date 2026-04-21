@@ -9,11 +9,10 @@ export type ProjectCard = {
 
 export const projectCards: ProjectCard[] = [
   {
-    slug: "LAIRresearch",
-    title: "ML Research",
-    blurb: "Classification of Particle Precipitation Events",
-    tags: ["Python", "Machine Learning", "Computer Vision", "Distributed Training"],
-    image: "/icons/cu.png",
+    slug: "SurfaceEdge",
+    title: "SurfaceEdge",
+    blurb: "CNN Options Pricing from Surface Images",
+    tags: ["Deep Learning", "Computer Vision", "Options Pricing", "Transformers"],
     featured: true
   },
   {
@@ -25,20 +24,21 @@ export const projectCards: ProjectCard[] = [
     featured: true
   },
   {
+    slug: "LAIRresearch",
+    title: "ML Research",
+    blurb: "Classification of Particle Precipitation Events",
+    tags: ["Python", "Machine Learning", "Computer Vision", "Distributed Training"],
+    image: "/icons/cu.png",
+    featured: true
+  },
+  {
     slug: "CalebBettcherDotCom",
     title: "Personal Website",
     blurb: "This Website!",
     tags: ["React", "Next.js", "TypeScript", "Vercel", "Web Development"],
     image: "/images/CBlogo.png",
-    featured: true
-  },
-  {
-    slug: "non-featured-project-1",
-    title: "Non-Featured Project 1",
-    blurb: "Coming soon...",
-    tags: [],
-    featured: true
-  },
+    featured: false
+  }
 ];
 
 export function getProject(slug: string) {
