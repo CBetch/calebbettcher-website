@@ -8,10 +8,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://calebbettcher.com/projects', lastModified: new Date() },
     { url: 'https://calebbettcher.com/projects/CalebBettcherDotCom', lastModified: new Date() },
     { url: 'https://calebbettcher.com/projects/LAIRresearch', lastModified: new Date() },
+    { url: 'https://calebbettcher.com/projects/CUQuants', lastModified: new Date() },
+    { url: 'https://calebbettcher.com/projects/SurfaceEdge', lastModified: new Date() },
 
     { url: 'https://calebbettcher.com/resume', lastModified: new Date() },
     { url: 'https://calebbettcher.com/contact', lastModified: new Date() },
     { url: 'https://calebbettcher.com/experience', lastModified: new Date() },
-    { url: 'https://calebbettcher.com/resume', lastModified: new Date() },
   ]
 }
