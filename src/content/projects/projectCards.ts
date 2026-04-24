@@ -32,9 +32,16 @@ export const projectCards: ProjectCard[] = [
     featured: true
   },
   {
+    slug: "InheritanceCost",
+    title: "The Cost of Abstraction",
+    blurb: "An empirical study on the performance cost of abstraction in object-oriented systems",
+    tags: ["Performance Engineering", "Optimization", "Research", "AWS", "Java"],
+    featured: false
+  },
+  {
     slug: "CalebBettcherDotCom",
     title: "Personal Website",
-    blurb: "This Website!",
+    blurb: "This website! built with Next.js and React, deployed on Vercel.",
     tags: ["React", "Next.js", "TypeScript", "Vercel", "Web Development"],
     image: "/images/CBlogo.png",
     featured: false
