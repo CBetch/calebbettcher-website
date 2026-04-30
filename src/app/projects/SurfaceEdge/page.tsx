@@ -42,7 +42,7 @@ export default function SurfaceEdgePage() {
           links={[
             { label: "Research Poster", href: "/projects/SurfaceEdge/Poster.pdf" },
             { label: "Presentation", href: "/projects/SurfaceEdge/Presentation.pdf" },
-            // { label: "Report", href: "/projects/SurfaceEdge/ LINK .pdf" },
+            { label: "Research Paper", href: "/projects/SurfaceEdge/Paper.pdf" },
             // { label: "GitHub", href: "/projects/SurfaceEdge/ LINK .pdf" },
           ]}
         />
