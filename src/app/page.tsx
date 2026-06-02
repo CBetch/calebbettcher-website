@@ -69,7 +69,7 @@ export default function Home() {
                 href="/projects/CUQuants"
                 title="CU Quants"
                 desc="Quantitative Trader"
-                img="/icons/CUQuants.png"
+                img="/icons/CUQuants.jpg"
               />
               <ExperienceCard
                 href="/projects/LAIRresearch"
