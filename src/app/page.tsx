@@ -43,8 +43,7 @@ export default function Home() {
                     <div className="text-xs text-muted uppercase tracking-wide mb-3">About Me</div>
                     <div className="text-sm text-fg/80 leading-relaxed space-y-2">
                       <p>ML Systems | High-Performance Software</p>
-                      <p>Computer science researcher and software engineer focused on machine learning systems, scientific data analysis, and quantitative finance applications.</p>
-                    </div>
+                      <p>Software engineer and researcher focused on building high-performance architecture for complex data, machine learning, and quantitative finance.</p>                     </div>
                   </Card>
                 </Link>
               </div>
@@ -67,16 +66,16 @@ export default function Home() {
                 img="/icons/cornell.png"
               />
               <ExperienceCard
+                href="/projects/CUQuants"
+                title="CU Quants"
+                desc="Quantitative Trader"
+                img="/icons/CUQuants.png"
+              />
+              <ExperienceCard
                 href="/projects/LAIRresearch"
                 title="Machine Learning Research"
                 desc="Classification of High-Energy Particle Precipitation Events Using Computer Vision"
                 img="/icons/cu.png"
-              />
-              <ExperienceCard
-                href="/resume"
-                title="Handshake AI"
-                desc="AI Research Fellowship"
-                img="/icons/handshake.png"
               />
             </div>
           </div>

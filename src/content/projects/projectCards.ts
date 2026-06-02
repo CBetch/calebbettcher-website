@@ -9,18 +9,18 @@ export type ProjectCard = {
 
 export const projectCards: ProjectCard[] = [
   {
-    slug: "SurfaceEdge",
-    title: "SurfaceEdge",
-    blurb: "CNN Options Pricing from Surface Images",
-    tags: ["Deep Learning", "Computer Vision", "Options Pricing", "Transformers"],
-    featured: true
-  },
-  {
     slug: "CUQuants",
     title: "CU Quants - Quant Trader",
     blurb: "My Work on CU Quant's Trading Team",
     tags: ["Quantitative Finance", "Market Making", "Cryptocurrency", "Real-Time Systems"],
     image: "/icons/CUQuants.jpg",
+    featured: false
+  },
+  {
+    slug: "SurfaceEdge",
+    title: "SurfaceEdge",
+    blurb: "CNN Options Pricing from Surface Images",
+    tags: ["Deep Learning", "Computer Vision", "Options Pricing", "Transformers"],
     featured: true
   },
   {
@@ -36,7 +36,7 @@ export const projectCards: ProjectCard[] = [
     title: "The Cost of Abstraction",
     blurb: "An empirical study on the performance cost of abstraction in object-oriented systems",
     tags: ["Performance Engineering", "Optimization", "Research", "AWS", "Java"],
-    featured: false
+    featured: true
   },
   {
     slug: "CalebBettcherDotCom",
