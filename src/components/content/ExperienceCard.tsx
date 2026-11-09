@@ -2,20 +2,23 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 
 type ExperienceCardProps = {
   href?: string;
   hrefLabel?: string;
   title: string;
   desc: string;
-  subdesc?: ReactNode;
   img: string;
-  date?: ReactNode;
+  /** Use "\n" for line breaks, e.g. "Aug 2023\n-\nMay 2026" */
+  date?: string;
+  /** When present, the card expands to show these */
+  bullets?: string[];
 };
 
-export default function ExperienceCard({ href, hrefLabel = "Learn More", title, desc, subdesc, img, date }: ExperienceCardProps) {
+export default function ExperienceCard({ href, hrefLabel = "Learn More", title, desc, img, date, bullets }: ExperienceCardProps) {
   const [open, setOpen] = useState(false);
+  const expandable = !!bullets?.length;
 
   const header = (
     <div className="flex items-center gap-4 w-full min-h-[72px]">
@@ -32,9 +35,9 @@ export default function ExperienceCard({ href, hrefLabel = "Learn More", title, 
       </div>
       <div className="flex items-center gap-4 shrink-0">
         {date && (
-          <div className="text-xs text-muted text-right hidden md:block leading-relaxed">{date}</div>
+          <div className="text-xs text-muted text-center hidden md:block leading-relaxed whitespace-pre-line">{date}</div>
         )}
-        {subdesc && (
+        {expandable && (
           <button
             onClick={(e) => { e.stopPropagation(); setOpen((o) => !o); }}
             className="w-7 h-7 rounded-full border border-white/10 flex items-center justify-center text-muted hover:text-fg hover:border-white/25 transition shrink-0 !cursor-pointer"
@@ -52,9 +55,13 @@ export default function ExperienceCard({ href, hrefLabel = "Learn More", title, 
     </div>
   );
 
-  const body = subdesc && open && (
+  const body = expandable && open && (
     <div className="mt-3 pt-3 border-t border-white/8 text-sm text-muted leading-relaxed">
-      {subdesc}
+      <ul className="space-y-2">
+        {bullets.map((b, i) => (
+          <li key={i}>• {b}</li>
+        ))}
+      </ul>
       {href && (
         <div className="mt-3">
           <Link
@@ -71,11 +78,11 @@ export default function ExperienceCard({ href, hrefLabel = "Learn More", title, 
 
   const cardClass = `
     w-full rounded-2xl border border-white/10 px-5 py-4 transition
-    ${subdesc ? `${!open ? "cursor-pointer hover:border-white/20 hover:bg-white/5" : "cursor-default [&_*]:cursor-default"}` : href ? "hover:border-white/20 hover:bg-white/5" : ""}
+    ${expandable ? `${!open ? "cursor-pointer hover:border-white/20 hover:bg-white/5" : "cursor-default [&_*]:cursor-default"}` : href ? "hover:border-white/20 hover:bg-white/5" : ""}
     ${open ? "border-white/15" : ""}
   `;
 
-  if (!subdesc && href) {
+  if (!expandable && href) {
     return (
       <Link href={href} className={cardClass}>
         {header}
@@ -86,7 +93,7 @@ export default function ExperienceCard({ href, hrefLabel = "Learn More", title, 
   return (
     <div
       className={cardClass}
-      onClick={() => subdesc && !open && setOpen(true)}
+      onClick={() => expandable && !open && setOpen(true)}
     >
       {header}
       {body}
