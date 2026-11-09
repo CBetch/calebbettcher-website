@@ -19,7 +19,7 @@ export default function ProjectsPage() {
           eyebrow=""
           title="Projects"
         />
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid auto-rows-[1fr] md:grid-cols-3 gap-5">
           {projectCards.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}

@@ -14,14 +14,16 @@ type ExperienceCardProps = {
   date?: string;
   /** When present, the card expands to show these */
   bullets?: string[];
+  /** Short blurb shown beside the title (stacks below it on narrow screens) */
+  summary?: string;
 };
 
-export default function ExperienceCard({ href, hrefLabel = "Learn More", title, desc, img, date, bullets }: ExperienceCardProps) {
+export default function ExperienceCard({ href, hrefLabel = "Learn More", title, desc, img, date, bullets, summary }: ExperienceCardProps) {
   const [open, setOpen] = useState(false);
   const expandable = !!bullets?.length;
 
-  const header = (
-    <div className="flex items-center gap-4 w-full min-h-[72px]">
+  const identity = (
+    <div className="flex items-center gap-4 min-w-0">
       <Image
         src={img}
         alt=""
@@ -33,6 +35,17 @@ export default function ExperienceCard({ href, hrefLabel = "Learn More", title, 
         <div className="text-xs text-muted uppercase tracking-[0.18em]">{title}</div>
         <div className="mt-1 text-base font-semibold text-fg leading-snug">{desc}</div>
       </div>
+    </div>
+  );
+
+  const header = summary ? (
+    <div className="grid lg:grid-cols-2 gap-x-6 gap-y-3 items-center w-full min-h-[115px]">
+      {identity}
+      <p className="text-sm text-muted leading-relaxed">{summary}</p>
+    </div>
+  ) : (
+    <div className="flex items-center gap-4 w-full min-h-[72px]">
+      <div className="min-w-0 flex-1">{identity}</div>
       <div className="flex items-center gap-4 shrink-0">
         {date && (
           <div className="text-xs text-muted text-center hidden md:block leading-relaxed whitespace-pre-line">{date}</div>
@@ -78,7 +91,7 @@ export default function ExperienceCard({ href, hrefLabel = "Learn More", title, 
 
   const cardClass = `
     w-full rounded-2xl border border-white/10 px-5 py-4 transition
-    ${expandable ? `${!open ? "cursor-pointer hover:border-white/20 hover:bg-white/5" : "cursor-default [&_*]:cursor-default"}` : href ? "hover:border-white/20 hover:bg-white/5" : ""}
+    ${expandable || href ? "hover:border-white/20 hover:bg-white/5" : ""} ${expandable ? "cursor-pointer" : ""}
     ${open ? "border-white/15" : ""}
   `;
 
@@ -93,7 +106,11 @@ export default function ExperienceCard({ href, hrefLabel = "Learn More", title, 
   return (
     <div
       className={cardClass}
-      onClick={() => expandable && !open && setOpen(true)}
+      onClick={() => {
+        // Don't toggle when the click finishes a text selection inside the card
+        if (!expandable || window.getSelection()?.toString()) return;
+        setOpen((o) => !o);
+      }}
     >
       {header}
       {body}

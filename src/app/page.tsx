@@ -58,24 +58,21 @@ export default function Home() {
                 title="Chicago Trading Company"
                 desc="Associate Software Engineer"
                 img="/icons/ctc.jpg"
+                summary="Full-time software engineering role in derivatives market making based out of Chicago."
               />
               <ExperienceCard
                 href="/experience"
                 title="Belvedere Trading"
                 desc="Quantitative Software Engineering Intern"
                 img="/icons/belvedere.png"
+                summary="Built a fully configurable, real-time C++ market data pipeline handling 100K+ messages/sec at sub-10μs latency."
               />
               <ExperienceCard
                 href="/education"
                 title="Cornell University"
                 desc="Master of Computer Science"
                 img="/icons/cornell.png"
-              />
-              <ExperienceCard
-                href="/projects/LAIRresearch"
-                title="Machine Learning Research"
-                desc="Classification of High-Energy Particle Precipitation Events Using Computer Vision"
-                img="/icons/cu.png"
+                summary="Recipient of a Cornell Tech merit scholarship to study graduate computer science at the Cornell Tech campus in New York City."
               />
             </div>
           </div>
@@ -88,7 +85,7 @@ export default function Home() {
             title="My Best Work"
             subtitle="A select few of my favorite projects that I've recently worked on!"
           />
-          <div className="grid md:grid-cols-3 gap-5">
+          <div className="grid auto-rows-[1fr] md:grid-cols-3 gap-5">
             {featured.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
