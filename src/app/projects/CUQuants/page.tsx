@@ -22,7 +22,7 @@ export default function CUQuantsPage() {
               Management, and Engineering teams — operates with the rigor of a professional
               firm. During treks to quant firms with Boulder offices such as Belvedere
               Trading, we were told the fund runs more like a real company than a student
-              club. Since May 2025, the fund has achieved 137.63% annualized returns.
+              club. In 2025, the fund achieved 137.63% annualized returns.
               <br /><br />
               As a member of the Trading team, I was primarily responsible for monitoring
               systems during trading hours, making real-time decisions during periods of

@@ -54,9 +54,15 @@ export default function Home() {
           <div className="min-w-0 md:-mr-10">
             <div className="mt-6 grid gap-6 w-full">
               <ExperienceCard
-                href="https://www.belvederetrading.com/about"
+                href="/experience"
+                title="Chicago Trading Company"
+                desc="Associate Software Engineer"
+                img="/icons/ctc.jpg"
+              />
+              <ExperienceCard
+                href="/experience"
                 title="Belvedere Trading"
-                desc="Quantitative Trading Software Development Intern"
+                desc="Quantitative Software Engineering Intern"
                 img="/icons/belvedere.png"
               />
               <ExperienceCard
@@ -64,12 +70,6 @@ export default function Home() {
                 title="Cornell University"
                 desc="Master of Computer Science"
                 img="/icons/cornell.png"
-              />
-              <ExperienceCard
-                href="/projects/CUQuants"
-                title="CU Quants"
-                desc="Quantitative Trader"
-                img="/icons/CUQuants.jpg"
               />
               <ExperienceCard
                 href="/projects/LAIRresearch"
